@@ -45,28 +45,25 @@ export default function Religion() {
     <div className="min-h-screen bg-white font-golos text-black">
 
       {/* HEADER */}
-      <header className="bg-black text-white sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="flex items-center justify-between h-14">
-            <span className="font-cormorant text-xl font-semibold tracking-wide text-white">
-              Деревня Ключи
-            </span>
-            <nav className="hidden lg:flex items-center gap-1">
+      <header className="bg-white border-b border-gray-200 sticky top-0 z-50">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="flex items-center justify-between h-12">
+            <nav className="hidden lg:flex items-center gap-6">
               {navItems.map((item) => (
                 <a
                   key={item.label}
                   href={item.href}
-                  className={`px-3 py-1.5 rounded text-sm font-medium transition-all duration-200 ${
+                  className={`text-sm transition-all duration-200 pb-0.5 ${
                     item.active
-                      ? 'bg-white text-black'
-                      : 'text-gray-400 hover:text-white hover:bg-white/10'
+                      ? 'text-black font-medium border-b-2 border-black'
+                      : 'text-gray-500 hover:text-black border-b-2 border-transparent'
                   }`}
                 >
                   {item.label}
                 </a>
               ))}
             </nav>
-            <button className="lg:hidden text-gray-400 hover:text-white">
+            <button className="lg:hidden text-gray-500 hover:text-black">
               <Icon name="Menu" size={22} />
             </button>
           </div>
