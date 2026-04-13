@@ -73,9 +73,9 @@ export default function Religion() {
       {/* HERO */}
       <section className="relative h-[480px] overflow-hidden">
         <img
-          src="https://cdn.poehali.dev/projects/90399748-251f-48eb-9dea-c10958dd6c32/files/fb9d4117-8bc3-40ff-8a73-3811bf22d8aa.jpg"
+          src="https://sobory.ru/pic/11400/11408bb.jpg"
           alt="Церковь Преображения Господня, д. Ключи"
-          className="w-full h-full object-cover grayscale"
+          className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
         <div className="absolute inset-0 flex flex-col justify-end px-6 pb-12 max-w-5xl mx-auto w-full left-0 right-0">
