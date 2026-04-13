@@ -232,10 +232,10 @@ export default function Religion() {
       </div>
 
       {/* FOOTER */}
-      <footer className="mt-16 bg-black text-gray-400 py-8">
+      <footer className="mt-16 bg-white border-t border-gray-200 py-8">
         <div className="max-w-5xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-3">
-          <span className="font-cormorant text-lg text-white">Деревня Ключи · Сысертский округ</span>
-          <span className="text-sm">© 2024 Официальный сайт деревни Ключи</span>
+          <span className="font-cormorant text-lg text-black">Деревня Ключи · Сысертский округ</span>
+          <span className="text-sm text-gray-400">© 2024 Официальный сайт деревни Ключи</span>
         </div>
       </footer>
     </div>
