@@ -14,23 +14,23 @@ const navItems = [
 ];
 
 const architectureFeatures = [
-  { icon: 'Building2', title: 'Колокольня', desc: 'Трёхъярусная колокольня высотой 28 метров с пятью колоколами, отлитыми в XIX веке' },
-  { icon: 'Star', title: 'Купола', desc: 'Пять куполов в форме луковиц, символизирующих Иисуса Христа и четырёх евангелистов' },
-  { icon: 'Layers', title: 'Росписи', desc: 'Внутренние фрески выполнены в академическом стиле конца XIX века, частично сохранились оригинальные росписи' },
-  { icon: 'Columns', title: 'Портик', desc: 'Входной портик с четырьмя колоннами коринфского ордера, характерный для классицизма эпохи Александра I' },
-  { icon: 'Gem', title: 'Иконостас', desc: 'Четырёхъярусный резной иконостас из белого мрамора с позолотой, установлен в 1847 году' },
-  { icon: 'MapPin', title: 'Апсида', desc: 'Полукруглая апсида с витражными окнами — редкость для православных храмов Сибири того времени' },
+  { icon: 'Building2', title: 'Четверик', desc: 'Двусветный четверик — основной объём храма, характерный для «русско-византийского» стиля по образцовым проектам' },
+  { icon: 'Star', title: 'Пятиглавие', desc: 'Декоративное пятиглавие: крупная центральная глава с луковичным куполом и небольшие угловые главки' },
+  { icon: 'Layers', title: 'Трапезная', desc: 'Просторная трапезная объединяет притвор с основным молитвенным помещением храма' },
+  { icon: 'Columns', title: 'Колокольня', desc: 'Шатровая колокольня — характерный элемент уральских приходских церквей конца XIX — начала XX века' },
+  { icon: 'Gem', title: 'Кирпичная кладка', desc: 'Стены выложены из красного кирпича по технологии, характерной для уральского церковного строительства' },
+  { icon: 'MapPin', title: 'Образцовый проект', desc: 'Построен по «образцовому» проекту, аналогичному Успенскому храму города Бобров — типичная практика провинциального зодчества' },
 ];
 
 const timeline = [
-  { year: '1802', title: 'Основание прихода', desc: 'Первые жители деревни Ключи основали приходскую общину. Богослужения проводились в деревянной часовне.' },
-  { year: '1834', title: 'Начало строительства', desc: 'По решению Томской епархии начато строительство каменного храма. Проект разработан архитектором Михаилом Праве.' },
-  { year: '1841', title: 'Освящение храма', desc: 'Главный престол освящён архиереем Томской епархии. В торжестве участвовали более 500 прихожан из окрестных сёл.' },
-  { year: '1847', title: 'Установка иконостаса', desc: 'Завершены внутренние отделочные работы. Установлен мраморный иконостас, написаны иконы петербургскими мастерами.' },
-  { year: '1886', title: 'Расширение храма', desc: 'К основному зданию пристроены два боковых придела — в честь Николая Чудотворца и Казанской иконы Божией Матери.' },
-  { year: '1937', title: 'Закрытие', desc: 'В период советских репрессий храм закрыт. Здание использовалось как склад зерна, часть икон и утвари была утрачена.' },
-  { year: '1991', title: 'Возрождение', desc: 'После распада СССР приход возобновил деятельность. Начаты масштабные реставрационные работы силами прихожан.' },
-  { year: '2003', title: 'Освящение после реставрации', desc: 'Полностью восстановленный храм освящён повторно. Возвращены колокола, восстановлены росписи и купола.' },
+  { year: 'XIX в.', title: 'Часовня', desc: 'На месте нынешнего храма существовала деревянная часовня, вокруг которой складывалась приходская жизнь деревни Ключи.' },
+  { year: '1910', title: 'Начало строительства', desc: 'Начата перестройка часовни в каменный однопрестольный храм по образцовому проекту, аналогичному Успенскому храму г. Бобров.' },
+  { year: '1910–1915', title: 'Возведение храма', desc: 'Спасо-Преображенский кирпичный однопрестольный храм возведён. Здание — двусветный четверик с декоративным пятиглавием, трапезной и шатровой колокольней.' },
+  { year: 'нач. XX в.', title: 'Освящение', desc: 'Каменный однопрестольный храм в честь Преображения Господня освящён. Приход входил в состав Екатеринбургской епархии.' },
+  { year: '1937', title: 'Закрытие', desc: 'С приходом к власти богоборцев храм закрыт. Купола снесены, здание перестроено под сельскую библиотеку и клуб с актовым залом.' },
+  { year: '2004', title: 'Возрождение', desc: '12 июля 2004 года в возвращаемом из поругания храме совершена первая Божественная литургия — в праздник святых апостолов Петра и Павла.' },
+  { year: '19 авг. 2004', title: 'Престольный праздник', desc: 'В день Преображения Господня, впервые за 67 лет, в храме состоялось богослужение в честь престольного праздника.' },
+  { year: '2018', title: 'Освящение купола', desc: '29 апреля 2018 года епископ Среднеуральский Евгений совершил чин освящения нового купола и креста восстанавливаемого Преображенского храма.' },
 ];
 
 const services = [
@@ -73,21 +73,21 @@ export default function Religion() {
       {/* HERO */}
       <section className="relative h-[480px] overflow-hidden">
         <img
-          src="https://cdn.poehali.dev/projects/90399748-251f-48eb-9dea-c10958dd6c32/files/bdfac9a3-7809-4ace-99d5-9803dee75149.jpg"
-          alt="Церковь Преображения Господня"
+          src="https://cdn.poehali.dev/projects/90399748-251f-48eb-9dea-c10958dd6c32/files/fb9d4117-8bc3-40ff-8a73-3811bf22d8aa.jpg"
+          alt="Церковь Преображения Господня, д. Ключи"
           className="w-full h-full object-cover grayscale"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
         <div className="absolute inset-0 flex flex-col justify-end px-6 pb-12 max-w-5xl mx-auto w-full left-0 right-0">
           <div className="flex items-center gap-2 mb-3">
             <div className="h-px w-8 bg-white" />
-            <span className="text-white text-sm font-medium tracking-widest uppercase opacity-70">Религия</span>
+            <span className="text-white text-sm font-medium tracking-widest uppercase opacity-70">Религия · Сысертский округ · Свердловская область</span>
           </div>
           <h1 className="font-cormorant text-5xl md:text-6xl font-bold text-white leading-tight mb-3">
             Церковь Преображения<br />Господня
           </h1>
           <p className="text-gray-300 text-lg max-w-xl">
-            Православный храм XIX века — духовный центр деревни Ключи на протяжении более 180 лет
+            Спасо-Преображенский кирпичный храм 1910–1915 годов — духовный центр деревни Ключи Екатеринбургской епархии
           </p>
         </div>
       </section>
@@ -108,17 +108,17 @@ export default function Religion() {
           <div className="md:col-span-2">
             <h2 className="font-cormorant text-3xl font-bold text-black mb-4">О храме</h2>
             <p className="text-gray-600 leading-relaxed mb-4">
-              Церковь Преображения Господня — главная православная святыня деревни Ключи. Построенная в 1834–1841 годах в стиле позднего классицизма, она является одним из наиболее хорошо сохранившихся памятников церковного зодчества XIX века в регионе.
+              Спасо-Преображенский кирпичный однопрестольный храм в деревне Ключи был перестроен из часовни в 1910–1915 годах по образцовому проекту, аналогичному Успенскому храму города Бобров. Здание выполнено в «русско-византийском» стиле — двусветный четверик с декоративным пятиглавием, трапезной и шатровой колокольней.
             </p>
             <p className="text-gray-600 leading-relaxed">
-              Храм пережил закрытие в советские годы, но был возрождён и полностью отреставрирован в 1991–2003 годах. Сегодня приход объединяет более 400 прихожан из деревни и окрестных сёл.
+              После закрытия в 1937 году и десятилетий запустения, в 2004 году в храме возобновились богослужения. Сегодня приход входит в состав Сысертского благочиния Екатеринбургской епархии Русской Православной Церкви. В здании одновременно располагается сельская библиотека и клуб — богослужения проходят в центральном молитвенном помещении.
             </p>
           </div>
           <div className="flex flex-col gap-3">
             {[
-              { icon: 'Calendar', label: 'Год основания', value: '1841' },
-              { icon: 'Users', label: 'Прихожан', value: '400+' },
-              { icon: 'MapPin', label: 'Адрес', value: 'ул. Центральная, 1' },
+              { icon: 'Calendar', label: 'Год постройки', value: '1910–1915' },
+              { icon: 'Church', label: 'Епархия', value: 'Екатеринбургская' },
+              { icon: 'MapPin', label: 'Адрес', value: 'ул. 9 Января, 4А' },
             ].map((info) => (
               <div key={info.label} className="border border-gray-200 rounded-xl p-4 flex items-center gap-3">
                 <div className="w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center flex-shrink-0">
@@ -126,7 +126,7 @@ export default function Religion() {
                 </div>
                 <div>
                   <div className="text-xs text-gray-400">{info.label}</div>
-                  <div className="font-semibold text-black">{info.value}</div>
+                  <div className="font-semibold text-black text-sm">{info.value}</div>
                 </div>
               </div>
             ))}
@@ -161,12 +161,12 @@ export default function Religion() {
             <div className="h-px flex-1 bg-gray-200" />
           </div>
           <div className="relative">
-            <div className="absolute left-[68px] top-0 bottom-0 w-px bg-gray-200" />
+            <div className="absolute left-[80px] top-0 bottom-0 w-px bg-gray-200" />
             <div className="flex flex-col gap-5">
               {timeline.map((item, i) => (
                 <div key={i} className="flex gap-6 group">
-                  <div className="flex-shrink-0 w-[68px] text-right pt-3">
-                    <span className="font-cormorant text-2xl font-bold text-black">{item.year}</span>
+                  <div className="flex-shrink-0 w-[80px] text-right pt-3">
+                    <span className="font-cormorant text-lg font-bold text-black leading-tight">{item.year}</span>
                   </div>
                   <div className="relative flex-shrink-0 flex items-start pt-[18px]">
                     <div className="w-3 h-3 rounded-full bg-white border-2 border-black relative z-10 group-hover:bg-black transition-colors" />
@@ -185,7 +185,7 @@ export default function Religion() {
         <section className="mb-16">
           <div className="bg-black rounded-2xl p-8 text-white">
             <h2 className="font-cormorant text-3xl font-bold mb-1">Расписание богослужений</h2>
-            <p className="text-gray-400 text-sm mb-6">Все богослужения проводятся в храме по адресу ул. Центральная, 1</p>
+            <p className="text-gray-400 text-sm mb-6">д. Ключи, ул. 9 Января, 4А · Сысертский округ, Свердловская область</p>
             <div className="grid sm:grid-cols-2 gap-3">
               {services.map((s) => (
                 <div key={s.day} className="flex items-center gap-4 bg-white/5 border border-white/10 rounded-xl px-5 py-4">
@@ -206,28 +206,29 @@ export default function Religion() {
         <section>
           <div className="grid md:grid-cols-2 gap-5">
             <div className="border border-gray-200 rounded-2xl p-6">
-              <h3 className="font-cormorant text-2xl font-bold text-black mb-4">Контакты</h3>
+              <h3 className="font-cormorant text-2xl font-bold text-black mb-4">Контакты прихода</h3>
               <div className="flex flex-col gap-3">
                 {[
-                  { icon: 'MapPin', text: 'ул. Центральная, 1, деревня Ключи' },
-                  { icon: 'Phone', text: '+7 (385) 000-00-00' },
-                  { icon: 'Mail', text: 'church.klyuchi@mail.ru' },
+                  { icon: 'MapPin', text: 'д. Ключи, ул. 9 Января, 4А, Сысертский округ' },
+                  { icon: 'Globe', text: 'ural-hram.ru' },
+                  { icon: 'Church', text: 'Сысертское благочиние, Екатеринбургская епархия' },
                 ].map((c) => (
-                  <div key={c.text} className="flex items-center gap-3 text-gray-600">
-                    <Icon name={c.icon} size={16} className="text-black flex-shrink-0" />
+                  <div key={c.text} className="flex items-start gap-3 text-gray-600">
+                    <Icon name={c.icon} size={16} className="text-black flex-shrink-0 mt-0.5" />
                     <span className="text-sm">{c.text}</span>
                   </div>
                 ))}
               </div>
             </div>
             <div className="border border-gray-200 rounded-2xl p-6">
-              <h3 className="font-cormorant text-2xl font-bold text-black mb-2">Помочь храму</h3>
+              <h3 className="font-cormorant text-2xl font-bold text-black mb-2">Как добраться</h3>
               <p className="text-sm text-gray-500 leading-relaxed mb-4">
-                Церковь принимает пожертвования на реставрацию боковых приделов и обновление росписей.
+                Автобусы № 133 и 182а от Южного автовокзала Екатеринбурга. Остановка — «Поворот на Ключи». Деревня в 34 км к юго-востоку от Екатеринбурга.
               </p>
-              <button className="bg-black text-white font-medium text-sm px-5 py-2.5 rounded-lg hover:bg-gray-800 transition-colors">
-                Сделать пожертвование
-              </button>
+              <div className="flex items-center gap-2 text-sm text-gray-500">
+                <Icon name="Bus" size={15} className="text-black" />
+                <span>Автобус 133, 182а · Южный автовокзал</span>
+              </div>
             </div>
           </div>
         </section>
@@ -237,7 +238,7 @@ export default function Religion() {
       {/* FOOTER */}
       <footer className="mt-16 bg-black text-gray-400 py-8">
         <div className="max-w-5xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-3">
-          <span className="font-cormorant text-lg text-white">Деревня Ключи</span>
+          <span className="font-cormorant text-lg text-white">Деревня Ключи · Сысертский округ</span>
           <span className="text-sm">© 2024 Официальный сайт деревни Ключи</span>
         </div>
       </footer>
