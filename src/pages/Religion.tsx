@@ -79,10 +79,6 @@ export default function Religion() {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
         <div className="absolute inset-0 flex flex-col justify-end px-6 pb-12 max-w-5xl mx-auto w-full left-0 right-0">
-          <div className="flex items-center gap-2 mb-3">
-            <div className="h-px w-8 bg-white" />
-            <span className="text-white text-sm font-medium tracking-widest uppercase opacity-70">Религия · Сысертский округ · Свердловская область</span>
-          </div>
           <h1 className="font-cormorant text-5xl md:text-6xl font-bold text-white leading-tight mb-3">
             Церковь Преображения<br />Господня
           </h1>
